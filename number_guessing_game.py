@@ -16,17 +16,17 @@ elif difficulty==2:
 elif difficulty==3:
     number=random.randint(1,201)
     print("Game has started. Computer chose a number between 1 and 200. You have 10 lifes for find it. Write your guess and see what you need to do.")
-hak=10
-while hak>0:
+life=10
+while life>0:
     predicted_number=int(input("Write your guess: "))
     if predicted_number<number:
-        hak-=1
-        print("Please write a larger number. Remaining lifes:" + str(hak))
+        life-=1
+        print("Please write a larger number. Remaining lifes:" + str(life))
     if predicted_number>number:
-        hak-=1
-        print("Please write a smaller number. Remaining lifes:" + str(hak))
+        life-=1
+        print("Please write a smaller number. Remaining lifes:" + str(life))
     if predicted_number==number:
-        print("Congratulations! You have found the correct number. Your remaining lifes were: " + str(hak))
+        print("Congratulations! You have found the correct number. Your remaining lifes were: " + str(life))
         break
     elif hak==0:
         print("You lost. Correct number was: " + str(number) + " " + "Good luck for the next one!")

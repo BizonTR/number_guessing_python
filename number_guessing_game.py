@@ -28,6 +28,6 @@ while life>0:
     if predicted_number==number:
         print("Congratulations! You have found the correct number. Your remaining lifes were: " + str(life))
         break
-    elif hak==0:
+    elif life==0:
         print("You lost. Correct number was: " + str(number) + " " + "Good luck for the next one!")
         break
